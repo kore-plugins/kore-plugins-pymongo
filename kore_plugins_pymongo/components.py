@@ -14,7 +14,7 @@ class PymongoPlugin(BasePluginComponent):
     def config(self, container):
         config = container('config')
 
-        return config.get('pymongo', {})
+        return config.get_section('pymongo')
 
     def client(self, container):
         config = container('kore.components.pymongo.config')

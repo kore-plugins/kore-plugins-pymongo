@@ -53,7 +53,7 @@ metadata = get_metadata(init_py)
 
 entry_points = """\
 [kore.components]
-kore.components.pymongo = kore_plugins_pymongo.plugins.pymongo:PymongoPlugin
+kore.components.pymongo = kore_plugins_pymongo.components:PymongoPlugin
 """
 
 
